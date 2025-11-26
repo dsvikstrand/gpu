@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NVIDIA A100 Prototyping Service – VDS Labs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Datacenter-class NVIDIA A100 (80 GB) GPU + deep-learning engineer for fast AI prototyping. Fixed-price prototypes, PyTorch-based experiments, and full ownership of models and code."
+  />
+  <style>
+    /* Minimal styling so it's readable – replace with your own CSS */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      color: #111827;
+      background: #f9fafb;
+      line-height: 1.6;
+    }
+    header, section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      background: #0f172a;
+      color: #f9fafb;
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin: 0.25rem 0 0.75rem;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+      max-width: 640px;
+    }
+    .btn-row {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .btn-primary, .btn-secondary {
+      display: inline-block;
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .btn-primary {
+      background: #38bdf8;
+      color: #0f172a;
+      border-color: #38bdf8;
+    }
+    .btn-primary:hover {
+      background: #0ea5e9;
+      border-color: #0ea5e9;
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #e5e7eb;
+      border-color: #64748b;
+    }
+    .btn-secondary:hover {
+      border-color: #e5e7eb;
+    }
+    .section-muted {
+      background: #e5e7eb;
+    }
+    .grid {
+      display: grid;
+      gap: 1.25rem;
+    }
+    @media (min-width: 768px) {
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    .card {
+      background: white;
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+    }
+    .faq-item {
+      margin-bottom: 1.25rem;
+    }
+    .faq-item:last-child {
+      margin-bottom: 0;
+    }
+    form {
+      margin-top: 1rem;
+      background: white;
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.25rem 1.5rem;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+    }
+    label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-top: 0.75rem;
+      margin-bottom: 0.15rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.55rem 0.7rem;
+      border-radius: 0.5rem;
+      border: 1px solid #d1d5db;
+      font-size: 0.9rem;
+      font-family: inherit;
+      box-sizing: border-box;
+      background: #f9fafb;
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .form-hint {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-bottom: 0.25rem;
+    }
+    .small-note {
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-top: 0.75rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+      padding: 1.5rem 1rem 2.5rem;
+    }
+    a.text-link {
+      color: #0ea5e9;
+      text-decoration: none;
+    }
+    a.text-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Datacenter-Class NVIDIA A100 + Deep-Learning Engineer for Fast AI Prototypes</h1>
+    <p class="hero-subtitle">
+      I help teams turn ideas into working AI prototypes by running custom PyTorch experiments on an NVIDIA A100 (80 GB).
+      You get both the GPU (Graphics Processing Unit) and a deep-learning engineer, often at a lower total cost than renting
+      the GPU alone.
+    </p>
+    <div class="btn-row">
+      <a href="#contact" class="btn-primary">Get a free prototype quote</a>
+      <!-- Replace # with your Calendly or booking link -->
+      <a href="https://calendly.com/your-link-here" class="btn-secondary">Book a 20-minute call</a>
+    </div>
+  </header>
+
+  <!-- WHO THIS IS FOR -->
+  <section>
+    <h2>Who Is This Service For?</h2>
+    <ul>
+      <li>Startups building an AI product but not ready to invest in their own high-end GPU cluster.</li>
+      <li>Teams with an idea or baseline model that need faster, deeper experiments than they can run on a laptop or small cloud instance.</li>
+      <li>Researchers or engineers who want an NVIDIA A100 (80 GB) plus someone who speaks PyTorch and deep learning, not just “GPU rental support”.</li>
+    </ul>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="section-muted">
+    <h2>What You Get When You Work With VDS Labs</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>NVIDIA A100 (80 GB) Compute</h3>
+        <p>
+          Your experiments run on a datacenter-class GPU, ideal for vision transformers, large convolutional networks,
+          and other compute-heavy models.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Hands-On Deep-Learning Engineering</h3>
+        <p>
+          I do more than launch training jobs: I help design experiments, choose architectures, debug training instability,
+          and profile performance.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Fixed-Price Prototype Quotes</h3>
+        <p>
+          After understanding your use case, I estimate the required GPU hours and engineering time, and send a fixed-price
+          quote with a clear delivery date.
+        </p>
+      </div>
+      <div class="card">
+        <h3>You Keep Everything</h3>
+        <p>
+          You own the trained models, code, notebooks, and reports. There are no hidden platform fees or lock-ins.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <h2>How the Prototyping Service Works</h2>
+    <ol>
+      <li>
+        <strong>Tell me about your idea</strong><br />
+        Use the form below or book a quick call to describe your data, goal, and current status
+        (idea only, baseline model, etc.).
+      </li>
+      <li>
+        <strong>I review and send a proposal</strong><br />
+        I come back with any follow-up questions and then send a fixed-price quote that includes scope, expected GPU usage,
+        timeline, and deliverables.
+      </li>
+      <li>
+        <strong>You approve and pay</strong><br />
+        For new clients, I usually work with a split (for example, 50% upfront, 50% on delivery). Payment can be handled via
+        invoice and standard international methods.
+      </li>
+      <li>
+        <strong>Prototyping on the A100</strong><br />
+        I implement the experiments, run training on the A100, and iterate where needed to reach the agreed goals
+        (such as a certain metric on a validation set or a working demo).
+      </li>
+      <li>
+        <strong>Delivery and hand-off</strong><br />
+        You receive code/notebooks, trained weights, a short report of what was tried and what worked, and simple instructions
+        on how to run or extend the prototype.
+      </li>
+    </ol>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section-muted">
+    <h2>Who Is Behind VDS Labs?</h2>
+    <p>
+      My name is David Vikstrand, a deep-learning engineer based in Sweden and founder of Vikstrand Deep Solutions (VDS).
+    </p>
+    <p>
+      I work directly in PyTorch, training custom neural networks on an NVIDIA A100 (80 GB) for real-world applications
+      such as computer vision and representation learning. I have experience from research projects at RISE Research
+      Institutes of Sweden and from building practical AI systems for industry clients.
+    </p>
+    <p>
+      When you work with me, you get clear communication, transparent experiments, and a focus on moving from idea
+      to working prototype as quickly and safely as possible.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Do you just rent out the GPU?</h3>
+      <p>
+        No. This is a service, not raw GPU rental. You get access to an NVIDIA A100 <em>together with</em> my time as a deep-learning
+        engineer. I design and run the experiments for you, which usually leads to better results and a lower total cost than
+        renting and trying to figure everything out alone.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What does a typical prototype cost?</h3>
+      <p>
+        It depends on scope and data. Simple prototypes can be a few hundred dollars; more complex work (larger models,
+        multiple experiments, or tricky data) can be higher. After you describe your use case, I’ll send a fixed-price quote
+        before any commitment is required.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do you work with clients outside Sweden?</h3>
+      <p>
+        Yes. Most of my work is fully remote, and I can collaborate with teams in Europe, the United States, and Asia.
+        We can coordinate via email, chat, and video calls.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can you sign an NDA?</h3>
+      <p>
+        Absolutely. If your project involves sensitive data or confidential business information, I am happy to sign a
+        non-disclosure agreement before we go into details.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What kinds of projects are a good fit?</h3>
+      <p>
+        Good fits include: training or fine-tuning vision models, experimenting with new architectures,
+        improving an existing model’s accuracy or speed, and exploring self-supervised or representation-learning approaches.
+        If you’re unsure, just describe your idea and I’ll tell you honestly whether I can help.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT / FORM -->
+  <section id="contact" class="section-muted">
+    <h2>Describe Your Prototype and Get a Free Quote</h2>
+    <p>
+      Fill out the form below with as much detail as you’re comfortable sharing. I’ll review your project, ask any clarifying
+      questions, and send back a free, no-obligation fixed-price quote.
+    </p>
+
+    <form action="/contact" method="post">
+      <!-- TODO: Update action to your real form handler or use a service (Netlify, Formspree, etc.) -->
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="company">Company / project name (optional)</label>
+      <input type="text" id="company" name="company" />
+
+      <label for="project">What are you trying to build?</label>
+      <p class="form-hint">
+        Short description of your idea or goal (for example, “classify images into X categories”, “embed text for semantic search”,
+        “prototype a vision transformer for defect detection”, etc.).
+      </p>
+      <textarea id="project" name="project" required></textarea>
+
+      <label for="stage">What stage are you at?</label>
+      <select id="stage" name="stage">
+        <option value="idea">Just an idea</option>
+        <option value="have-data">Have data, no model</option>
+        <option value="baseline-model">Have a baseline model</option>
+        <option value="optimization">Need optimization / scaling</option>
+      </select>
+
+      <label for="data">Do you already have data?</label>
+      <select id="data" name="data">
+        <option value="yes">Yes</option>
+        <option value="partly">Partly</option>
+        <option value="no">No, still collecting</option>
+      </select>
+
+      <label for="timeline">Ideal timeline</label>
+      <select id="timeline" name="timeline">
+        <option value="this-month">This month</option>
+        <option value="this-quarter">This quarter</option>
+        <option value="flexible">Flexible</option>
+      </select>
+
+      <label for="details">Optional details</label>
+      <p class="form-hint">
+        Anything else I should know? Architecture preferences, existing code, constraints, evaluation metrics, etc.
+      </p>
+      <textarea id="details" name="details"></textarea>
+
+      <div style="margin-top: 1.25rem;">
+        <button type="submit" class="btn-primary">Send my project for review</button>
+      </div>
+
+      <p class="small-note">
+        I usually respond within 1–2 business days with follow-up questions or a fixed-price quote. No commitment required.
+      </p>
+    </form>
+
+    <p class="small-note">
+      Prefer a quick call instead?
+      <!-- Replace with your real booking link -->
+      <a href="https://calendly.com/your-link-here" class="text-link">Book a free 20-minute scoping call</a>.
+    </p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> VDS Labs – NVIDIA A100 Prototyping Service
+  </footer>
+
+  <script>
+    // Simple current-year footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
