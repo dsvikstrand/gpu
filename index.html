@@ -333,8 +333,12 @@
       questions, and send back a free, no-obligation fixed-price quote.
     </p>
 
-    <form action="/contact" method="post">
-      <!-- TODO: Update action to your real form handler or use a service (Netlify, Formspree, etc.) -->
+    <form
+      action="https://formspree.io/f/xrbwzapo"
+      method="POST"
+    >
+      <!-- Optional: subject line for the email you receive -->
+      <input type="hidden" name="_subject" value="New A100 Prototype Inquiry from gpu.vdslabs.se" />
 
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required />
